@@ -1,0 +1,2 @@
+# Only needed for --format pdf or --format both. HTML uses Python standard library.
+reportlab>=4.4,<5

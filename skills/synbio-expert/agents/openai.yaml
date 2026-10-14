@@ -1,0 +1,4 @@
+interface:
+  display_name: "合成生物学证据研判"
+  short_description: "用证据卡解释合成生物学、研读论文并标明结论强度与外推边界"
+  default_prompt: "使用 $synbio-expert，把我的合成生物学问题整理成证据卡，说明结论级别、机制、适用范围和下一步。"

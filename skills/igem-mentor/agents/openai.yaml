@@ -1,0 +1,4 @@
+interface:
+  display_name: "iGEM 赛事证据台"
+  short_description: "按年份和角色提供双语赛事辅导，标明规则证据状态与官方来源"
+  default_prompt: "使用 $igem-mentor，根据参赛年份和我的角色回答问题，区分已核验、入口已找到、未核验和冲突状态。"

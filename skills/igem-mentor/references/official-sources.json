@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-09-14",
+  "scope": "官方导航种子，不是全部官网镜像，也不是实时赛事政策缓存。未保存任何费用金额或deadline。",
+  "verification_notes": "official-index-excerpt表示本次检索取得官方页面摘录；js-shell-only表示打开URL仅取得JavaScript外壳，未核验正文、Tab或条款。",
+  "sources": [
+    {"id":"registration-faq","topic":"注册FAQ","url":"https://competition.igem.org/registration/faq","navigation_hint":"Registration / FAQ","verification":"official-index-excerpt","known_scope":"检索确认2026注册FAQ主题；费用与退费条款未取得"},
+    {"id":"calendar","topic":"赛事日历","url":"https://competition.igem.org/calendar","navigation_hint":"Calendar入口；具体Tab需运行时确认","verification":"js-shell-only","known_scope":"未核验当年日期"},
+    {"id":"fees","topic":"费用入口候选","url":"https://competition.igem.org/registration/fees","navigation_hint":"先从Registration确认现行费用页面","verification":"js-shell-only","known_scope":"URL未取得政策正文，不能据此推断存在现行收费表"},
+    {"id":"medals","topic":"奖牌条件","url":"https://competition.igem.org/judging/awards/medals","navigation_hint":"Judging / Medals","verification":"official-index-excerpt","known_scope":"摘录显示2026奖牌条件和交付物类别；精确适用解释仍需当次核验"},
+    {"id":"special-awards","topic":"专项奖项","url":"https://competition.igem.org/judging/special-prizes","navigation_hint":"Judging / Special Awards","verification":"official-index-excerpt","known_scope":"取得奖项介绍及部分公开评审问题，不代表取得未公开评分标准"},
+    {"id":"handbook","topic":"评审手册","url":"https://competition.igem.org/judging/handbook","navigation_hint":"Judging / Handbook","verification":"official-index-excerpt","known_scope":"取得2026及往届手册目录，PDF全文未在此包内存储或完整核验"},
+    {"id":"responsibility","topic":"安全与责任","url":"https://responsibility.igem.org/","navigation_hint":"Responsibility / Safety & Security 或 Human Practices","verification":"official-index-excerpt","known_scope":"取得项目责任与安全表单入口介绍；细分政策运行时核验"},
+    {"id":"human-practices","topic":"Human Practices含义","url":"https://responsibility.igem.org/human-practices/what-is-human-practices","navigation_hint":"Responsibility / Human Practices / What?","verification":"official-index-excerpt","known_scope":"取得项目与社会相互影响的主题介绍"},
+    {"id":"high-school","topic":"高中带队教师学习","url":"https://competition.igem.org/high-school/pi-webinars","navigation_hint":"High School / PI Webinars","verification":"official-index-excerpt","known_scope":"取得教师网络研讨会主题列表；不将讲座介绍视为比赛政策"}
+  ]
+}

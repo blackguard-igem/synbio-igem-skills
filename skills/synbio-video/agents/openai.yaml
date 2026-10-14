@@ -1,0 +1,4 @@
+interface:
+  display_name: "合成生物学科学媒体"
+  short_description: "将科学主张映射到镜头、来源与视觉类型，并安全合成本地已有片段"
+  default_prompt: "使用 $synbio-video，把已核实内容转成镜头契约，标明允许主张、视觉类型、来源和制作状态。"

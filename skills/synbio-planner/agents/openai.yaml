@@ -1,0 +1,4 @@
+interface:
+  display_name: "合成生物学执行蓝图"
+  short_description: "用成果图、依赖图和证据闸门规划研究项目、课程及科普活动"
+  default_prompt: "请使用 $synbio-planner，根据我的受众、周期和资源建立执行蓝图，列出成果、依赖、证据闸门与近期任务。"

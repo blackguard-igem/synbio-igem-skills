@@ -1,0 +1,4 @@
+interface:
+  display_name: "合成生物学现场提示卡"
+  short_description: "把已校核内容组织成带触发点、证据锚点和交接动作的多人卡片"
+  default_prompt: "使用 $synbio-cue-cards，将已校核内容整理成现场卡片，保留触发点、核心话语、证据、动作和持有人。"

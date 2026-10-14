@@ -1,0 +1,4 @@
+interface:
+  display_name: "合成生物学证据账本"
+  short_description: "按项目在本地保存和检索资料，返回版本、来源与可复核的命中行号"
+  default_prompt: "请使用 $synbio-knowledge-base，只在我指定的项目中检索资料，并分开呈现原文命中、解释和待核验问题。"

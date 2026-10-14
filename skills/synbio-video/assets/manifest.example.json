@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "output": "output/lesson-v1.mp4",
+  "width": 1280,
+  "height": 720,
+  "fps": 25,
+  "clips": [
+    {
+      "path": "media/intro.mp4",
+      "start": 0,
+      "duration": 4,
+      "caption": "课程导入：从问题开始设计",
+      "visual_type": "illustration",
+      "source_note": "教学示意，不代表本队实验结果"
+    },
+    {
+      "path": "media/concept.mp4",
+      "start": 0,
+      "duration": 6,
+      "caption": "AI 生成示意，非实验结果",
+      "visual_type": "ai-illustration",
+      "source_note": "补充实际生成记录；概念性画面"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "team_id": "",
+  "project_id": "",
+  "competition_year": null,
+  "section": "",
+  "user_role": "",
+  "preferred_language": "zh-CN,en",
+  "goal": "",
+  "confirmed_facts": [],
+  "completed_with_evidence": [],
+  "planned_tasks": [],
+  "unresolved_questions": [],
+  "mentor_or_official_review_needed": [],
+  "next_step": "",
+  "last_updated": null
+}
