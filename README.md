@@ -1,4 +1,3 @@
-Warning: fsm was declared with const; use let for reassignable variables.
 # SynBio & iGEM Skills Collection
 
 Version 1.1.0 · Release package prepared September 15, 2026
