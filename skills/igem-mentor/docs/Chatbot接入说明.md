@@ -1,25 +1,25 @@
-# Chatbot接入说明
+# Chatbot Integration Guide
 
-此包可作为现有Agent或Chatbot平台的指导资源，不包含独立网站服务。
+This package provides guidance resources for an existing agent or chatbot platform; it does not include a standalone web service.
 
-## 最小接入
+## Minimum integration
 
-1. 在宿主提供本Skill的SKILL.md及按需读取的references、assets文件；不要把全部资料每轮机械塞进提示。
-2. 提供网页搜索/读取能力，或由老师提供可读的官方政策。宿主需能报告读取失败，不能伪装实时检索。
-3. 将当前日期、用户角色、目标比赛年份、参赛组别与本队伍上下文传给助手。未知字段保持未知。
-4. 渲染可点击的引用以及中文回答、英文摘要和栏目位置。使用户能看到资料年份与核验时间。
-5. 需要跨会话时把项目状态存入受访问控制的队伍空间；平台在检索前校验用户对team_id/project_id的访问权限，不能仅相信用户自报ID。
+1. Make this Skill's `SKILL.md` and its `references` and `assets` files available to the host on demand. Do not mechanically insert every document into every prompt.
+2. Provide web search and page-reading capability, or allow a teacher to provide readable official policy. The host must report read failures instead of pretending it performed a live search.
+3. Pass the current date, user role, target competition year, division, and relevant team context to the assistant. Keep unknown fields unknown.
+4. Render clickable citations, the Chinese answer, English summary, and site section. Let users see the source year and verification time.
+5. For cross-session use, save project state in an access-controlled team space. Before retrieval, verify the user's access to `team_id`/`project_id`; do not trust a self-reported ID alone.
 
-本地知识库工具提供项目筛选但不负责互联网服务的用户认证。公开部署需要宿主处理登录、权限、速率限制、日志与模型密钥，不把命令行工具直接当公开API。
+The local knowledge-base tool filters project data but does not provide internet-service authentication. A public deployment needs the host to handle login, access control, rate limits, logs, and model keys. Do not expose a command-line tool directly as a public API.
 
-## 单轮调用示意
+## Single-turn flow
 
-宿主获取用户输入及允许访问的队伍状态；助手判断主题；读取该主题流程；用检索工具取得官方页面；核对年份和适用条件；形成带来源的双语回答；仅在实际写入成功后报告状态已保存。
+The host receives user input and only the team state the user may access; the assistant identifies the topic; reads the relevant workflow; retrieves official pages with the search tool; checks year and applicability; produces a cited bilingual answer; and reports that state was saved only after a successful write.
 
-## 交付验收
+## Acceptance checks
 
-使用一条当前规则问题、一条页面无法读取的问题、一条历年案例问题验证引用与未知处理；再用连续两轮纠正年份的对话验证上下文更新。测试一个队伍不能读取另一个队伍的记录。具体金额、deadline和安全审批不能通过语言流畅度判断正确。
+Test a current-rule question, a page that cannot be read, and a past-year example. Verify citations and handling of unknowns. Then correct the year in a second turn and check that context updates. Also test that one team cannot read another team's records. Fluent wording does not establish that fees, deadlines, or safety approvals are correct.
 
-## 已知限制
+## Known limitations
 
-官网动态页面、登录入口和规则更新可能导致读取失败。包内导航不是完整爬虫；此版本没有付费云端适配器、自动年度同步或用户管理后台。使用方应根据平台能力实现这些服务，不在界面宣传尚未接通的功能。
+Dynamic official pages, login gates, and rule updates may prevent access. The package's navigation is not a complete crawler. This release has no paid cloud adapter, automatic annual synchronization, or user-management console. Implement these services according to the chosen host; do not advertise features that are not connected.
